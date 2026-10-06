@@ -1,0 +1,105 @@
+/* ==========================================
+   SB Works - Global Application Styles (App.css)
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f4f6f9 0%, #edf1f7 100%);
+    color: #1e293b;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+.App {
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Smooth Scrollbars for Dashboard Column Boxes */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Global Card & Container Enhancements */
+.card, .project-form-body, .new-project-form, .user-application, .client-application {
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Global Form Floating Styles */
+.form-floating > .form-control {
+    border-radius: 0.75rem;
+    border: 1px solid #cbd5e1;
+    padding: 1rem 0.75rem;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.form-floating > .form-control:focus {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.1);
+}
+
+/* Global Buttons with Modern Accents */
+.btn-success {
+    background-color: #0f766e !important;
+    border-color: #0f766e !important;
+    border-radius: 0.75rem !important;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-success:hover {
+    background-color: #115e59 !important;
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+    border-radius: 0.75rem !important;
+    font-weight: 600;
+}
+
+.btn-danger {
+    border-radius: 0.75rem !important;
+    font-weight: 600;
+}
+
+/* Status Badges */
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    letter-spacing: 0.3px;
+}

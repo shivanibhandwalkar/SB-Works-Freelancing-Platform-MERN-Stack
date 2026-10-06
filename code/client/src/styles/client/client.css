@@ -1,0 +1,94 @@
+
+
+.dashboard-page, .client-dashboard, div[class*="dashboard"] {
+    background: linear-gradient(135deg, #9cb2c9 0%, #f1f5f9 100%);
+    min-height: 100vh;
+    padding: 2.5rem 3vw;
+}
+
+/* Welcome Banner (Glassmorphism & Rich Gradient Accent) */
+.welcome-banner, .card:first-of-type {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    border-left: 5px solid #0f766e !important; /* Rich Teal Accent Border */
+    border-radius: 1.25rem !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    padding: 2.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.welcome-banner h2, .welcome-banner h1 {
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+.welcome-banner p {
+    color: #64748b;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+/* Stat Cards */
+.stat-card, .card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 1.5rem;
+}
+
+.stat-card:hover, .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: rgba(15, 118, 110, 0.2);
+}
+
+/* Stat Numbers styling */
+.stat-number, h2 span, .display-4 {
+    font-weight: 800;
+    background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Section Headings */
+h3, .section-title {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1.35rem;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+/* Action Buttons */
+.btn-primary, .btn-success, button {
+    border-radius: 0.75rem !important;
+    font-weight: 600;
+    padding: 0.65rem 1.5rem !important;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #0f766e 0%, #115e59 100%) !important;
+    border: none !important;
+}
+
+.btn-success:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 118, 110, 0.25);
+}
+
+/* Badges */
+.badge.bg-success, .badge {
+    background-color: #ecfdf5 !important;
+    color: #047857 !important;
+    border: 1px solid #a7f3d0;
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+    border-radius: 2rem;
+}

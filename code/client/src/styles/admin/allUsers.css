@@ -1,0 +1,57 @@
+.all-users-page {
+    padding: 5vh 3vw;
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef2f7 100%);
+    min-height: 100vh;
+}
+
+.all-users-page h3 {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.all-users {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.user {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    /* Rich, modern gradient border effect with soft drop shadow */
+    border: 1px solid rgba(238, 70, 14, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 2.2vh 2vw;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.user:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(238, 70, 14, 0.1);
+    border-color: rgba(238, 70, 14, 0.4);
+}
+
+.user span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user span b {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0f766e; /* Deep, rich teal shade */
+}
+
+.user span p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #64748b; /* Clean slate gray for subtitles/emails */
+}
